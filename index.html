@@ -14,24 +14,7 @@
 	<script src="https://2-22-4-dot-lead-pages.appspot.com/static/lp918/min/html5shiv.js"></script>
 	 <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 </head>
-<script>
-var faq = document.getElementsByClassName("faq-page");
-var i;
-for (i = 0; i < faq.length; i++) {
-    faq[i].addEventListener("click", function () {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
-        /* Toggle between hiding and showing the active panel */
-        var body = this.nextElementSibling;
-        if (body.style.display === "block") {
-            body.style.display = "none";
-        } else {
-            body.style.display = "block";
-        }
-    });
-}
-</script>
+
 <style>
 	body{
     font-family: 'Work Sans', sans-serif;
@@ -102,7 +85,6 @@ flex-direction: column;
 	<div class="main-content">
 		<p class="main-content__body" data-lead-id="main-content-body">For 5 years of Discord Boats</p>
 	</div>
-	  <h1 class="faq-heading">FAQ'S</h1>
         <section class="faq-container">
             <div class="faq-one">
                 <!-- faq question -->
@@ -141,4 +123,19 @@ flex-direction: column;
             </div>
         </section>
 </body>
+<script>
+var faq = document.getElementsByClassName("faq-page");
+var i;
+for (i = 0; i < faq.length; i++) {
+    faq[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var body = this.nextElementSibling;
+        if (body.style.display === "block") {
+            body.style.display = "none";
+        } else {
+            body.style.display = "block";
+        }
+    });
+}
+</script>
 </html>
